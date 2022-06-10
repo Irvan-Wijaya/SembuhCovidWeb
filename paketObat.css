@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'Kanit', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Kanit&display=swap);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+nav{
+    background-color: #0da2d8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav .mainMenu li a:hover{
+    background: whitesmoke;
+}
+
+
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .closeMenu, .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-tiktok:hover{
+    color: red; 
+}
+.fa-instagram:hover{
+    color: fuchsia;
+}
+.fa-twitter:hover{
+    color: lightseagreen;
+}
+.fa-github:hover{
+    color: coral;
+}
+
+nav .logo{
+    /* margin: 6px; */
+    font-size: 25px;
+    cursor: pointer;
+    /*  */
+    width: 20%;
+    /* background-color: #FF9901; */
+    margin: auto 5%;
+}
+
+nav .logo img{
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+nav li a .button{
+    background-color: #FF9901;
+}
+
+.button{
+    background-color: #FF9901;
+    margin: auto 10px;
+    margin-right: 5%;
+    padding: 10px;
+    border-radius: 14px;
+    width: 10%;
+}
+
+.button p{
+    width: 75%;
+    margin: auto;
+}
+
+@media(max-width: 907px){
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #79DAE8;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover{
+        background: none;
+        color: black;
+        font-size: 1.6rem;
+    }
+
+    .icons i{
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .button{
+        background-color: #FF9901;
+        margin: auto 10px;
+        margin-right: 5%;
+        padding: 10px;
+        border-radius: 14px;
+        width: 15%;
+    }
+    
+    .button p{
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 876px){
+    .button{
+        background-color: #FF9901;
+        margin: auto 10px;
+        margin-right: 5%;
+        padding: 10px;
+        border-radius: 14px;
+        width: 20%;
+    }
+    
+    .button p{
+        width: 65%;
+        margin: auto;
+    }
+}
+
+main{
+    /* background-color: #79DAE8; */
+    width: 95%;
+    margin: 2% auto;
+    display: flex;
+}
+
+.kiri{
+    /* background-color: burlywood; */
+    flex: 1;
+}
+
+.kiri .judul{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15%;
+}
+
+.kiri .judul h1{
+    font-weight: 800;
+    color: #0da2d8;
+    text-decoration: underline;
+    font-weight: 800;
+    font-size: 3vw;
+}
+
+.kiri .judul p{
+    font-weight: 550;
+}
+
+.kiri .paket{
+    /* background-color: antiquewhite; */
+    color: #00509D;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.kiri .paket .kotak{
+    padding: 5%;
+    width: 70%;
+    margin: 0 auto;
+    border: 3px groove #0DA2D8;
+    border-radius: 30px;
+}
+
+.kiri .paket .kotak ul li{
+    list-style-type: none;
+}
+
+.kiri .paket .kotak ul~li{
+    font-weight: 800;
+    margin-bottom: 1%;
+}
+
+.kiri .paket .kotak ul .jua{
+    font-weight: 800;
+    margin-bottom: 1%;
+}
+
+.kiri .paket .kotak .hailait{
+    width: 50%;
+    background-color: #0da2d8;
+    color: white;
+    font-size: 0.9vw;
+    padding: 2%;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: -14%;
+}
+
+.kiri .tombol{
+    /* background-color: antiquewhite; */
+    text-align: center;
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.kiri .tombol .kuning{
+    background-color: #FF9901;
+    width: 29%;
+    border-radius: 14px;
+}
+.kiri .tombol .putih{
+    border: 3px groove #FF9901;
+    width: 29%;
+    border-radius: 14px;
+}
+
+.kiri .tombol .kuning p{
+    padding: 10%;
+    font-weight: 700;
+    color: white;
+}
+.kiri .tombol .putih p{
+    padding: 10%;
+    color: #FF9901;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+.kanan{
+    /* background-color: lightcoral; */
+    flex: 1;
+}
+
+.kanan .catatan{
+    /* background-color: #FF9901; */
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.kanan .catatan .judulCatatan{
+    border: 3px groove #0da2d8;
+    border-radius: 16px;
+    padding: 4%;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+.kanan .catatan .judulCatatan .ahaha{
+    background-color: #0DA2D8;
+    width: 30%;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+    margin-top: -8%;
+    margin-bottom: 5%;
+}
+
+.kanan .catatan .judulCatatan .ahaha h3{
+    padding:5% 7%;
+    font-size: 1.4vw;
+}
+
+.gambarnya{
+    /* background-color: #0da2d8; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.gambarnya img{
+    width: 100%;
+}
+
+
