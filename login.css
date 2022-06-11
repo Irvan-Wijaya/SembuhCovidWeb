@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Kanit', sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Kanit&display=swap);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+nav{
+    background-color: #0da2d8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav .mainMenu li a:hover{
+    background: whitesmoke;
+}
+
+
+nav .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .closeMenu, .icons i{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-tiktok:hover{
+    color: red; 
+}
+.fa-instagram:hover{
+    color: fuchsia;
+}
+.fa-twitter:hover{
+    color: lightseagreen;
+}
+.fa-github:hover{
+    color: coral;
+}
+
+nav .logo{
+    /* margin: 6px; */
+    font-size: 25px;
+    cursor: pointer;
+    /*  */
+    width: 20%;
+    /* background-color: #FF9901; */
+    margin: auto 5%;
+}
+
+nav .logo img{
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+nav li a .button{
+    background-color: #FF9901;
+}
+
+.button{
+    background-color: #FF9901;
+    margin: auto 10px;
+    margin-right: 5%;
+    padding: 10px;
+    border-radius: 14px;
+    width: 10%;
+}
+
+.button p{
+    width: 75%;
+    margin: auto;
+}
+
+@media(max-width: 907px){
+    nav .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #79DAE8;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover{
+        background: none;
+        color: black;
+        font-size: 1.6rem;
+    }
+
+    .icons i{
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .button{
+        background-color: #FF9901;
+        margin: auto 10px;
+        margin-right: 5%;
+        padding: 10px;
+        border-radius: 14px;
+        width: 15%;
+    }
+    
+    .button p{
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 876px){
+    .button{
+        background-color: #FF9901;
+        margin: auto 10px;
+        margin-right: 5%;
+        padding: 10px;
+        border-radius: 14px;
+        width: 20%;
+    }
+    
+    .button p{
+        width: 65%;
+        margin: auto;
+    }
+}
+
+
+
+main{
+    display: flex;
+    background-color: lightcoral;
+}
+
+main .kiri{
+    flex: 2;
+    /* background-color: #FF9901; */
+    background-image: url(assets/crop.jpg);
+    background-size: cover;
+}
+
+main .kanan{
+    flex: 1;
+    background-color: #FF9901;
+    padding: 4%;
+}
+
+main .kanan .konten{
+    /* background-color: coral; */
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main .kanan .konten .judul{
+    margin-bottom: 8%;
+    /* background-color: #79DAE8; */
+}
+
+main .kanan .konten .judul h1{
+    font-weight: 600;
+}
+
+main .kanan .konten .dataDiri{
+    background-color: #0da2d8;
+    padding: 6%;
+    border-radius: 16px;
+    margin-bottom: 8%;
+}
+
+main .kanan .konten .dataDiri .isi form>input{
+    width: 100%;
+    margin-bottom: 5%;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    border-bottom-width: 2px;
+}
+main .kanan .konten .dataDiri .isi form>label{
+    color: white;
+    font-weight: 500;
+}
+main .kanan .konten .dataDiri .isi form>label>input{
+    margin-bottom: 5%;
+    height: 15px;
+    box-shadow: none;
+    border: none;
+    border-bottom-width: 2px;
+}
+
+.kanan .konten .dataDiri .periksa{
+    background-color: #FF9901;
+    width: 100%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.kanan .konten .dataDiri .periksa h3{
+    color: white;
+    text-align: center;
+}
+
+
+main .kanan .konten .syarat h3{
+    font-weight: 500;
+    color: #0DA2D8;
+}
+
+main .kanan .konten .syarat p{
+    font-weight: 550;
+    word-spacing: 3px;
+    /* letter-spacing: 1px; */
+}
+
+main .kanan .konten .syarat p span{
+    font-weight: 550;
+    color: #0da2d8;
+}
