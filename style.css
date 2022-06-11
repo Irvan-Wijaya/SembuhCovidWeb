@@ -82,18 +82,32 @@ nav li a .button{
     background-color: #FF9901;
 }
 
-.button{
+.button {
     background-color: #FF9901;
-    margin: auto 10px;
-    margin-right: 5%;
-    padding: 10px;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
     border-radius: 14px;
-    width: 10%;
-}
+    width: 200px;
+  }
 
 .button p{
     width: 75%;
     margin: auto;
+}
+
+.button {font-size: 25px; font-weight: 600;}
+
+.button:hover {
+    background-color: #ec9004; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 @media(max-width: 907px){
