@@ -16,12 +16,14 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    width: 100%;
 }
 
 
 nav .mainMenu{
     display: flex;
     list-style: none;
+    margin: auto;
 }
 
 nav .mainMenu li a{
@@ -30,10 +32,12 @@ nav .mainMenu li a{
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+    transition: 2s;
 }
 
 nav .mainMenu li a:hover{
-    background: whitesmoke;
+    position: relative;
+    bottom: 20%;
 }
 
 
@@ -51,16 +55,16 @@ nav .closeMenu, .icons i{
 }
 
 .fa-tiktok:hover{
-    color: red; 
+    color: black; 
 }
 .fa-instagram:hover{
     color: fuchsia;
 }
 .fa-twitter:hover{
-    color: lightseagreen;
+    color: darkblue;
 }
 .fa-github:hover{
-    color: coral;
+    color: black;
 }
 
 nav .logo{
@@ -78,9 +82,9 @@ nav .logo img{
     /* background-color: aquamarine; */
 }
 
-nav li a .button{
+/* nav li a .button{
     background-color: #FF9901;
-}
+} */
 
 .button{
     background-color: #FF9901;
@@ -89,14 +93,23 @@ nav li a .button{
     padding: 10px;
     border-radius: 14px;
     width: 10%;
+    cursor: pointer;
 }
 
-.button p{
-    width: 75%;
-    margin: auto;
+.button .tulisan{
+    width: 100%;
+    /* background-color: #79DAE8; */
+    text-align: center;
+    font-weight: 600;
 }
 
-@media(max-width: 907px){
+.button:hover {
+    background-color: white; 
+    color: #FF9901;
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+}
+
+@media(max-width: 1336px){
     nav .mainMenu{
         height: 100vh;
         position: fixed;
@@ -107,7 +120,7 @@ nav li a .button{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #79DAE8;
+        background-color: #0da2d8;
         transition: top 1s ease;
         display: none;
     }
@@ -149,7 +162,7 @@ nav li a .button{
     }
 }
 
-@media(max-width: 876px){
+@media(max-width: 767px){
     .button{
         background-color: #FF9901;
         margin: auto 10px;
@@ -159,30 +172,33 @@ nav li a .button{
         width: 20%;
     }
     
-    .button p{
+    /* .button p{
         width: 65%;
         margin: auto;
-    }
+    } */
 }
+
 
 
 
 main{
     display: flex;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
 main .kiri{
-    flex: 2;
-    /* background-color: #FF9901; */
-    background-image: url(assets/crop.jpg);
+    flex: 1;
+    /* background-color: lightcoral; */
+    background-image: url(assets/asian-woman-doctor-personal-protective-suit-with-mask-writing-quarantine-patient-chart-holding-test-tube-with-blood-sample-screening-coronavirus-coronavirus-covid-19-concept.jpg);
     background-size: cover;
+    /* width: 100%; */
 }
 
 main .kanan{
     flex: 1;
-    background-color: #FF9901;
+    /* background-color: #FF9901; */
     padding: 4%;
+    height: 100%;
 }
 
 main .kanan .konten{
@@ -257,4 +273,21 @@ main .kanan .konten .syarat p{
 main .kanan .konten .syarat p span{
     font-weight: 550;
     color: #0da2d8;
+}
+
+.kanan .konten .dataDiri .periksa:hover{
+    color: #FF9901;
+    background-color: white;
+}
+
+.kanan .konten .dataDiri .periksa:active{
+    color: #FF9901;
+    background-color: whitesmoke;
+}
+
+.kanan .konten .dataDiri .periksa{
+    background-color: #FF9901;
+    color: white;
+    text-align: center;
+    font-weight: 600;
 }
