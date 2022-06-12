@@ -187,7 +187,7 @@ main{
 }
 
 main .kiri{
-    flex: 1;
+    flex: 1.2;
     /* background-color: lightcoral; */
     background-image: url(assets/asian-woman-doctor-personal-protective-suit-with-mask-writing-quarantine-patient-chart-holding-test-tube-with-blood-sample-screening-coronavirus-coronavirus-covid-19-concept.jpg);
     background-size: cover;
