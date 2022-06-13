@@ -86,6 +86,67 @@ nav .logo img{
     background-color: #FF9901;
 } */
 
+.form-control{
+    padding-bottom: 20px
+}
+
+.form-control input{
+    border: 2px solid white;
+    border-radius: 6px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+.form-control i{
+    position: absolute;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 2;
+    left: 10;
+}
+
+.form-control.error small{
+    color: white;
+    visibility: visible;
+}
+
+.form button{
+    background-color: #FF9901;
+    border: 2px #FF9901;
+    color: white;
+    display: block;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    width: 100%;
+}
+
 .button{
     background-color: #FF9901;
     margin: auto 10px;
@@ -104,6 +165,12 @@ nav .logo img{
 }
 
 .button:hover {
+    background-color: white; 
+    color: #FF9901;
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+}
+
+.button:hover a{
     background-color: white; 
     color: #FF9901;
     /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
@@ -178,9 +245,6 @@ nav .logo img{
     } */
 }
 
-
-
-
 main{
     display: flex;
     /* background-color: lightcoral; */
@@ -189,7 +253,7 @@ main{
 main .kiri{
     flex: 1.2;
     /* background-color: lightcoral; */
-    background-image: url(assets/asian-woman-doctor-personal-protective-suit-with-mask-writing-quarantine-patient-chart-holding-test-tube-with-blood-sample-screening-coronavirus-coronavirus-covid-19-concept.jpg);
+    background-image: url(../Asset/asian-woman-doctor-personal-protective-suit-with-mask-writing-quarantine-patient-chart-holding-test-tube-with-blood-sample-screening-coronavirus-coronavirus-covid-19-concept.jpg);
     background-size: cover;
     /* width: 100%; */
 }
@@ -290,4 +354,38 @@ main .kanan .konten .syarat p span{
     color: white;
     text-align: center;
     font-weight: 600;
+}
+
+a{
+    text-decoration:none;
+    color: white;
+}
+
+.dataDiri .isi form a{
+    cursor: pointer;
+}
+
+.buttonLacak {
+    background-color: #FF9901;
+    border: none;
+    color: white;
+    padding: 0.6rem 0rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    border-radius: 14px;
+    width: 20rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+
+.buttonLacak {font-size: 30px; font-weight: 600;}
+
+.buttonLacak:hover {
+    background-color: #ec9004; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
