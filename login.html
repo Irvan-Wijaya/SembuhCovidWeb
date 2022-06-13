@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sembuh Covid</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../CSS/Login.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="assets/logoputih.png" alt=""></div>
+            <div class="logo"><a href="../HTML/Login.html"><img src="../Asset/Logo Panjang SembuhCovid (Putih).png" alt=""></a></div>
             <div class="openMenu"><i class="fa fa-bars"></i></div>
             <ul class="mainMenu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Information</a></li>
+                <li><a href="../HTML/Login.html">Home</a></li>
+                <li><a href="../HTML/About Us.html">About Us</a></li>
+                <li><a href="../HTML/Contact Us.html">Contact Us</a></li>
+                <li><a href="../HTML/Information.html">Information</a></li>
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
                 <span class="icons">
                     <i class="fab fa-tiktok"></i>
@@ -27,7 +27,7 @@
             </ul>
             <div class="button">
                 <div class="tulisan">
-                    <p>Lacak Obat</p>
+                    <a href="../HTML/Lacak Obat.html"><p>Lacak Obat</p></a>
                 </div>
             </div>
         </nav>
@@ -48,14 +48,25 @@
                 </div>
                 <div class="dataDiri">
                     <div class="isi">
-                        <form action="">
-                            <input type="text" placeholder=" NIK">
-                            <input type="text" placeholder=" Nama Lengkap">
-                            <label for=""><input type="checkbox"> Ingat saya</label>
+                        <form class="form" id="form">
+                            <div class = "form-control">
+                                <input type="text" placeholder="     NIK" id="nik">
+                                <!-- <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i> -->
+                                <small>Error message</small>
+                            </div>
+
+                            <div class = "form-control">
+                                <input type="text" placeholder="     Nama Lengkap" id="nama">
+                                <!-- <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i> -->
+                                <small>Error message</small>
+                            </div>
+
+                            <div class="periksa">
+                                <button><a href="../HTML/Form Data Diri.html">Periksa</a></button>
+                            </div>
                         </form>
-                    </div>
-                    <div class="periksa button">
-                        <p>Periksa</p>
                     </div>
                 </div>
                 <div class="syarat">
@@ -69,6 +80,8 @@
     </main>
     
     <script src="https://kit.fontawesome.com/9d31970ec4.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <!-- <script src="../JS/header.js"></script> -->
+    <script src="../JS/Login2.js"></script>
+
 </body>
 </html>
