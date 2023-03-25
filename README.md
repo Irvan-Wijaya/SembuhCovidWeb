@@ -1,6 +1,6 @@
 # SembuhCovid Projects
 
-### An application web platform that aims to make it easier for Covid patients to get free medicines from the government.
+### Healthcare web application platform that aims to make it easier for Covid patients to get free medicines from the government.
 
 For more information, please check this 
 [Documentation](https://drive.google.com/file/d/1VNQOpzKSMfX5fByJvYMNP-S2DhJhiFsl/view?usp=share_link).
